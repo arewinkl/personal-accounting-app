@@ -6,8 +6,8 @@ function InputFields() {
     catagory: "",
     date: "",
     cost: "",
-    debit: "",
-    credit: "",
+    debit: false,
+    credit: false,
     description: "",
   });
   const handleSubmit = (e) => {
@@ -58,7 +58,7 @@ function InputFields() {
             type="checkbox"
             name="debit"
             onChange={(e) =>
-              setDataEntry({ ...dataEntry, [e.target.name]: e.target.value })
+              setDataEntry({ ...dataEntry, [e.target.name]: !dataEntry.debit })
             }
             value={dataEntry.debit}
           ></input>
@@ -68,7 +68,7 @@ function InputFields() {
             type="checkbox"
             name="credit"
             onChange={(e) =>
-              setDataEntry({ ...dataEntry, [e.target.name]: e.target.value })
+              setDataEntry({ ...dataEntry, [e.target.name]: !dataEntry.credit })
             }
             value={dataEntry.credit}
           ></input>
