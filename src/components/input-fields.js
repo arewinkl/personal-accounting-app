@@ -13,6 +13,14 @@ function InputFields() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(dataEntry);
+    setDataEntry({
+      catagory: "",
+      date: "",
+      cost: "",
+      debit: false,
+      credit: false,
+      description: "",
+    });
   };
 
   //   console.log(dataEntry, setDataEntry);
