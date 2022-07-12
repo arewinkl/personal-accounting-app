@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../App.css";
 
 function InputFields() {
+  const [data, setData] = useState("");
   const [dataEntry, setDataEntry] = useState({
     catagory: "",
     date: "",
@@ -12,7 +13,7 @@ function InputFields() {
   });
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(dataEntry);
+    setData([...data, dataEntry]);
     setDataEntry({
       catagory: "",
       date: "",
@@ -22,7 +23,7 @@ function InputFields() {
       description: "",
     });
   };
-
+  console.log(data);
   //   console.log(dataEntry, setDataEntry);
   return (
     <div className="App">
