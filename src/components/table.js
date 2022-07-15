@@ -7,24 +7,24 @@ function Table({ info }) {
     <div className="App">
       <h1>Monthly Expense Table</h1>
       <table>
-        <tr>
-          <th>Catagory</th>
-          <th>Date</th>
-          <th>Cost</th>
-          <th>Debit</th>
-          <th>Credit</th>
-          <th>Description</th>
+        <tr className="table-row">
+          <th className="table-header">Catagory</th>
+          <th className="table-header">Date</th>
+          <th className="table-header">Cost</th>
+          <th className="table-header">Debit</th>
+          <th className="table-header">Credit</th>
+          <th className="table-header">Description</th>
         </tr>
 
         {Object.values(info).map((value, key) => {
           return (
             <tr key={key}>
-              <td>{value.catagory}</td>
-              <td>{value.date}</td>
-              <td>{value.cost}</td>
-              <td>{value.debit}</td>
-              <td>{value.credit}</td>
-              <td>{value.description}</td>
+              <td className="table-data">{value.catagory}</td>
+              <td className="table-data">{value.date}</td>
+              <td className="table-data">{value.cost}</td>
+              <td className="table-data">{value.debit}</td>
+              <td className="table-data">{value.credit}</td>
+              <td className="table-data">{value.description}</td>
             </tr>
           );
         })}
