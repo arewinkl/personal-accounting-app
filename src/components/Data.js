@@ -9,7 +9,7 @@ export const stockData = [
   {
     catagory: "Gas",
     cost: "60",
-    credit: false,
+    credit: true,
     date: "2022-07-11",
     debit: false,
     description: "Gas for car.",
@@ -17,7 +17,7 @@ export const stockData = [
   {
     catagory: "Rent",
     cost: "800",
-    credit: false,
+    credit: true,
     date: "2022-08-01",
     debit: false,
     description: "Payment for rent of house.",
@@ -27,7 +27,7 @@ export const stockData = [
     cost: "1200",
     credit: false,
     date: "2022-07-15",
-    debit: false,
+    debit: true,
     description: "Salary from working.",
   },
   {
@@ -35,13 +35,13 @@ export const stockData = [
     cost: "95",
     credit: true,
     date: "2022-07-05",
-    debit: true,
+    debit: false,
     description: "Cost of going to dinner with family for a birthday.",
   },
   {
     catagory: "Plane ticket",
     cost: "240",
-    credit: false,
+    credit: true,
     date: "2022-07-28",
     debit: false,
     description: "Cost of flight to Vegas for vacation.",
@@ -49,7 +49,7 @@ export const stockData = [
   {
     catagory: "Shoes",
     cost: "40.99",
-    credit: false,
+    credit: true,
     date: "2022-07-18",
     debit: false,
     description: "New pair of shoes for soccer.",
@@ -57,7 +57,7 @@ export const stockData = [
   {
     catagory: "Grocery",
     cost: "115.99",
-    credit: false,
+    credit: true,
     date: "2022-07-23",
     debit: false,
     description: "Food for the week.",
@@ -65,9 +65,17 @@ export const stockData = [
   {
     catagory: "PayPal",
     cost: "243",
-    credit: true,
+    credit: false,
     date: "2022-06-27",
     debit: true,
     description: "Getting paid from friends for ubers.",
+  },
+  {
+    catagory: "Gym Membership",
+    cost: "45.23",
+    credit: true,
+    date: "2022-07-05",
+    debit: false,
+    description: "Got a new gym membership to try to rehab.",
   },
 ];
