@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "../App.css";
+import { VictoryChart } from "victory-chart";
+import { VictoryBar } from "victory-bar";
+import { VictoryScatter } from "victory-scatter";
 
 function Table({ info }) {
   console.log(info);
@@ -29,6 +32,16 @@ function Table({ info }) {
           );
         })}
       </table>
+
+      <VictoryChart horizontal domainPadding={{ x: 8 }}>
+        <VictoryBar
+          style={{
+            data: { fill: "#c43a31" },
+          }}
+          data={info}
+        />
+        <VictoryScatter data={info} />
+      </VictoryChart>
       {/* <h2>{info[0].catagory}</h2> */}
     </div>
   );

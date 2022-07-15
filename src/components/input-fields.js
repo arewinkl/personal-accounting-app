@@ -16,6 +16,7 @@ function InputFields({ handleData }) {
     // setData([...data, dataEntry]);
     handleData(dataEntry);
     setDataEntry({
+      question: "",
       catagory: "",
       date: "",
       cost: "",
@@ -31,6 +32,36 @@ function InputFields({ handleData }) {
       <header className="App-header">
         <h1>Personal Accounting</h1>
         <form onSubmit={handleSubmit}>
+          <label>
+            questions
+            <select
+              placeholder="select something"
+              onChange={
+                (e) => console.log("sdfdsf", e.target.value)
+                // setDataEntry({
+                //   ...dataEntry,
+                //   [e.target.name]: e.target.value,
+                // })
+              }
+              value={dataEntry.question}
+            >
+              <option name="question" value="housing-utilities">
+                Housing/Utilities
+              </option>
+              <option name="question" value="transportation">
+                Transportation
+              </option>
+              <option name="question" value="food-clothing">
+                Food/Clothing
+              </option>
+              <option name="question" value="medicine">
+                Medicine
+              </option>
+              <option name="question" value="income">
+                Income
+              </option>
+            </select>
+          </label>
           Catagory:
           <input
             className="money-inputs"
