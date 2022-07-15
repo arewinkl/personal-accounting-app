@@ -50,3 +50,11 @@ code {
     transform: rotate(360deg);
   }
 }
+
+table tr:nth-child(odd) {
+  background-color: #ff33cc;
+}
+
+table tr:nth-child(even) {
+  background-color: #e495e4;
+}

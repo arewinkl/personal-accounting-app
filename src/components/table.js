@@ -2,12 +2,6 @@ import { useState } from "react";
 import "../App.css";
 
 function Table({ info }) {
-  const data = [
-    { name: "Anom", age: 19, gender: "Male" },
-    { name: "Megha", age: 19, gender: "Female" },
-    { name: "Subham", age: 25, gender: "Male" },
-  ];
-  //   console.log(data);
   console.log(info);
   return (
     <div className="App">
@@ -21,12 +15,16 @@ function Table({ info }) {
           <th>Credit</th>
           <th>Description</th>
         </tr>
-        {data.map((val, key) => {
+
+        {Object.values(info).map((value, key) => {
           return (
             <tr key={key}>
-              <td>{val.name}</td>
-              <td>{val.age}</td>
-              <td>{val.gender}</td>
+              <td>{value.catagory}</td>
+              <td>{value.date}</td>
+              <td>{value.cost}</td>
+              <td>{value.debit}</td>
+              <td>{value.credit}</td>
+              <td>{value.description}</td>
             </tr>
           );
         })}
