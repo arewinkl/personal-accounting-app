@@ -5,7 +5,7 @@ function Table({ info }) {
   console.log(info);
   return (
     <div className="App">
-      <h2>Ella dog</h2>
+      <h1>Monthly Expense Table</h1>
       <table>
         <tr>
           <th>Catagory</th>

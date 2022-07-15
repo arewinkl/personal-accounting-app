@@ -14,6 +14,14 @@ code {
 
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-logo {
@@ -52,9 +60,9 @@ code {
 }
 
 table tr:nth-child(odd) {
-  background-color: #ff33cc;
+  background-color: #282c34;
 }
 
 table tr:nth-child(even) {
-  background-color: #e495e4;
+  background-color: #95e1e44d;
 }
