@@ -21,6 +21,7 @@ function InputFields({ handleData }) {
       date: "",
       cost: "",
       debit: false,
+
       credit: false,
       description: "",
     });
